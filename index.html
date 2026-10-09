@@ -94,14 +94,45 @@
         <div class="quadrado">Lógica de Programação</div>
     </div>
 </section>
-```
 
-            <section class="contato">
-                <h2 class="titulocont">Meus contatos</h2>
-                <p>E-mail: luiza.praseres07@gmail.com</p>
-                <p>Whatsapp: (31)98941-7449</p>
-                <p>Linkedin: Luiza Gontijo</p>
-            </section>
+<section class="contato">
+    <h2 class="titulocont">Entre em contato</h2>
+
+    <div class="conteudo-contato">
+
+        <div class="informacoes">
+            <h3>Minhas informações</h3>
+            <p>E-mail: luiza.praseres07@gmail.com</p>
+            <p>WhatsApp: (31) 98941-7449</p>
+            <p>Linkedin: Luiza Gontijo</p>
+            <p>Estou disponível para conversar sobre projetos e oportunidades!</p>
+        </div>
+
+        <form class="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"
+                   placeholder="Digite seu nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone"
+                   placeholder="(31) 99999-9999" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Digite seu e-mail" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"
+                      placeholder="Escreva sua mensagem"
+                      rows="5" required></textarea>
+
+            <button type="submit" class="botao-enviar">
+                Enviar mensagem
+            </button>
+        </form>
+
+    </div>
+</section>
     <script src="script.js"></script>
 </body>
 </html>
