@@ -64,7 +64,7 @@
         border-radius: 10px;
         align-items: center;
         background-color: gray;
-        height: 30vh;
+        height: 45vh;
         width: 60vh;
         color: white;
         box-shadow: 15px 10px rgb(208, 88, 245);
@@ -163,36 +163,110 @@
     box-shadow: 7px 7px 0px rgb(208, 88, 245);
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
-    .esquerda, .direita {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .esquerda p, .direita p {
-        text-align: center;
-    }
-}
-    .titulocont{
-        margin-bottom: 10vh;
-        text-align: left;
-        color: white;
-        display: flex;
-        justify-content: center;
-    }
-    .contato {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.contato {
+    padding: 60px 8%;
     min-height: 100vh;
 }
-.contato p {
-    margin: 10px 0;
-    background-color: #777;
-    box-shadow: 7px 7px 0px rgb(208, 88, 245);
+
+.titulocont {
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.conteudo-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.informacoes {
+    flex: 1;
+    color: white;
+}
+
+.informacoes h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: rgb(208, 88, 245);
+}
+
+.informacoes p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    max-width: 500px;
+    padding: 30px;
+    background-color: gray;
+    border-radius: 12px;
+    box-shadow: 7px 7px rgb(208, 88, 245);
+}
+
+.form-contato label {
+    color: white;
+    font-weight: bold;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.form-contato textarea {
+    resize: vertical;
+}
+
+.botao-enviar {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(208, 88, 245);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botao-enviar:hover {
+    background-color: #a52bc9;
+}
+
+/* Celular */
+@media (max-width: 700px) {
+    .conteudo-contato {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 35px;
+    }
+
+    .informacoes h3 {
+        font-size: 24px;
+    }
+
+    .form-contato {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .titulocont {
+        margin-bottom: 35px;
+    }
 }
 
 /* Botão de tema */
