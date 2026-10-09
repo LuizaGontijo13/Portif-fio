@@ -1,0 +1,555 @@
+*{ box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+    }
+    body{
+        background-color: rgb(70, 67, 67);
+    }
+    header>ul{
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        font-size: 13px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        background-color: gray;
+        margin-left: 37%;
+        width: 40vh;
+        height: 5vh;
+        border-radius: 32px;
+        align-items: center;
+        box-shadow: 5px 10px rgb(208, 88, 245);
+    }
+    .menu-header{
+        color: white;
+        text-decoration: none;
+    }
+    .inicio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        height: 30vh;
+        margin-top: 15vh;
+        gap: 30px;
+    }
+    .inicio h2{
+        margin-left: 55vh;
+        text-align: left;
+        color: white;
+    }
+    .inicio img{
+        margin-left: 20vh;
+          border-radius: 200px;   
+          width: 40vh;  
+          height: 40vh;   
+        box-shadow: 15px 10px rgb(208, 88, 245);
+    }
+    .eu h2{
+        margin-top: 30vh;
+        text-align: left;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .eu p{
+        margin-top: 10vh;
+        margin-bottom: 10vh ;
+        padding: 20px;
+        font-size: 20px;
+        margin-left: 40vh;
+        border-radius: 10px;
+        align-items: center;
+        background-color: gray;
+        height: 30vh;
+        width: 60vh;
+        color: white;
+        box-shadow: 15px 10px rgb(208, 88, 245);
+        margin: 1;
+    }
+    .cards {
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+    }
+    .card {
+        width: 250px;
+        height: 378px;
+        background-color: white;
+        padding: 14px;
+        border-radius: 5px;
+        box-shadow: 7px 7px 0px rgb(208, 88, 245);
+    }
+    .imagem img{
+        width: 196px;
+        height: 176px;
+        background-color: #e5e5e5;
+        margin-bottom: 14px;
+    }
+    .card h2 {
+        font-size: 26px;
+        color: #222;
+        margin-bottom: 6px;
+    }
+    .card p {
+        font-size: 16px;
+        line-height: 15px;
+        color: #777;
+    }
+    .titulopj{
+        margin-bottom: 10vh;
+        text-align: left;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .botao {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: rgb(208, 88, 245);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+    
+    .botao:hover {
+        background-color: rgb(208, 88, 245);
+    }
+
+.habilidades {
+    padding: 50px 10%;
+}
+
+.titulohabi {
+    text-align: center;
+    margin-bottom: 10vh;
+    color: white;
+    margin-top: 15vh;
+}
+
+.esquerda,
+.direita {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.esquerda p,
+.direita p {
+    flex: 1;
+    text-align: justify;
+}
+
+.quadrado {
+    width: 180px;
+    height: 180px;
+    background-color: #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    box-shadow: 7px 7px 0px rgb(208, 88, 245);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .esquerda, .direita {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .esquerda p, .direita p {
+        text-align: center;
+    }
+}
+    .titulocont{
+        margin-bottom: 10vh;
+        text-align: left;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+.contato p {
+    margin: 10px 0;
+    background-color: #777;
+    box-shadow: 7px 7px 0px rgb(208, 88, 245);
+}
+
+/* Botão de tema */
+.botao-tema {
+    display: block;
+    margin: 25px auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(208, 88, 245);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-tema:hover {
+    transform: scale(1.05);
+}
+
+/* Tema claro */
+body.claro {
+    background-color: #f2f2f2;
+    color: #222;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+body.claro .inicio h2,
+body.claro .eu h2,
+body.claro .titulopj,
+body.claro .titulohabi,
+body.claro .titulocont,
+body.claro .esquerda p,
+body.claro .direita p {
+    color: #222;
+}
+
+body.claro header > ul {
+    background-color: #ddd;
+}
+
+body.claro .menu-header {
+    color: #222;
+}
+
+body.claro .eu p,
+body.claro .contato p {
+    background-color: #fff;
+    color: #333;
+}
+
+body.claro .quadrado {
+    background-color: #ddd;
+    color: #222;
+}
+
+body.claro .quadrado:hover {
+    background-color: white;
+}
+
+body.claro .card {
+    background-color: white;
+    color: #222;
+}
+
+/* Transição suave */
+body {
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* RESPONSIVIDADE DO PORTFÓLIO */
+
+/* Tablets e telas médias */
+@media (max-width: 900px) {}
+
+    *header {
+        padding: 20px;
+    }
+
+    header > ul {
+        margin: 0 auto;
+        width: fit-content;
+        max-width: 100%;
+        min-height: 45px;
+        height: auto;
+        padding: 12px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .inicio {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        margin: 80px 5% 100px;
+        gap: 30px;
+    }
+
+    .inicio h2 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .inicio img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    
+    .cards {
+        flex-wrap: wrap;
+        gap: 35px;
+        padding: 0 20px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .habilidades {
+        padding: 30px 7%;
+    }
+
+    .esquerda,
+    .direita {
+        gap: 25px;
+    }
+
+    .contato {
+        padding: 50px 20px;
+        min-height: 70vh;
+    }
+
+
+/* Celulares */
+@media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header > ul {
+        width: 100%;
+        gap: 12px;
+        padding: 12px 8px;
+        font-size: 11px;
+        letter-spacing: 1px;
+        box-shadow: 3px 5px rgb(208, 88, 245);
+    }
+
+    .btn-header {
+        white-space: nowrap;
+    }
+
+    /* Início */
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 60px 20px 100px;
+        gap: 35px;
+    }
+
+    .inicio h2 {
+        font-size: 32px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .inicio img {
+        width: 70%;
+        max-width: 250px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto;
+        box-shadow: 8px 8px rgb(208, 88, 245);
+    }
+
+
+    /* Projetos */
+    .projetos {
+        padding: 30px 15px;
+    }
+
+    .titulopj {
+        margin-bottom: 35px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        min-height: 378px;
+        padding: 15px;
+    }
+
+    .imagem img {
+        display: block;
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+    }
+
+    .card h2 {
+        font-size: 23px;
+    }
+
+    .card p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    /* Habilidades */
+    .habilidades {
+        padding: 30px 20px;
+    }
+
+    .titulohabi {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 28px;
+    }
+
+    .esquerda,
+    .direita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 45px;
+    }
+
+    .esquerda p,
+    .direita p {
+        width: 100%;
+        flex: auto;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .quadrado {
+        width: 180px;
+        height: 180px;
+        flex-shrink: 0;
+    }
+
+    /* Contatos */
+    .contato {
+        min-height: 60vh;
+        padding: 50px 20px;
+        gap: 15px;
+    }
+
+    .titulocont {
+        margin-bottom: 25px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .contato p {
+        max-width: 100%;
+        padding: 12px;
+        font-size: 14px;
+        overflow-wrap: anywhere;
+        line-height: 1.5;
+    }
+}
+
+/* Rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animação ao aparecer na tela */
+.animar {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animar.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efeito nos cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 10px 12px 0 rgb(208, 88, 245);
+}
+
+/* Efeito nos quadrados de habilidades */
+.quadrado {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.quadrado:hover {
+    transform: scale(1.06);
+    background-color: white;
+}
+
+/* Animação do título */
+.titulo-animado {
+    animation: aparecerTitulo 1.2s ease;
+}
+
+@keyframes aparecerTitulo {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Destaque dos links do menu */
+.menu-header {
+    transition: color 0.3s ease;
+}
+
+.menu-header:hover {
+    color: rgb(208, 88, 245);
+}
+
+/* Respeita quem prefere menos animações */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
